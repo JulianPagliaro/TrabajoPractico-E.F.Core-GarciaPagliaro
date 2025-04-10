@@ -21,10 +21,10 @@ namespace EF.Consola.Validators
             RuleFor(g => g.PublishDate).NotEmpty().WithMessage("The {PropertyName} is required")
                 .LessThanOrEqualTo(DateOnly.FromDateTime(DateTime.Now)).WithMessage("The {PropertyName} must be less than or equal to {ComparasionValue}");
 
-            RuleFor(g => g.Price).NotEmpty().WithMessage("The {PropertyName} is required")
+            RuleFor(g => g.Price).NotNull().WithMessage("The {PropertyName} is required")
                 .GreaterThan(0).WithMessage("The {PropertyName} must be greater than {ComparasionValue}")
                 .LessThanOrEqualTo(1000).WithMessage("The {PropertyName} must be less than or equal to {ComparasionValue}");
-            
+
 
         }
     }
