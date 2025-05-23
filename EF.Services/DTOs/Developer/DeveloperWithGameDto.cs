@@ -1,0 +1,19 @@
+﻿using EF.Services.DTOs.Game;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EF.Services.DTOs.Developer
+{
+    public class DeveloperWithGameDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+        public List<GameDto> Games { get; set; } = null!;
+
+
+
+    }
+}

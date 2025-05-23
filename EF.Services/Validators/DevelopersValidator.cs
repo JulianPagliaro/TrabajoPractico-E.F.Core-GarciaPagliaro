@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EF.Consola.Validators
+namespace EF.Services.Validators
 {
     public class DevelopersValidator : AbstractValidator<Developer>
     {
